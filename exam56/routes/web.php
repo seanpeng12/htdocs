@@ -15,24 +15,24 @@
 |
 */
 
-// Route::get('/', function () { //localhost =>welcome.blade.php 網址=>動作
-//     return view('welcome');
-// });
+Route::get('/', function () { //localhost =>welcome.blade.php 網址=>動作
+    return view('welcome')->with('name', 'tad')->with('say', ' ');
+});
 
 //攜帶參數to view
 //send a list
 
-Route::get('/tad', function () {
-    return view('welcome')->with('name', 'tad')->with('say', '你好');
-});
+// Route::get('/tad', function () {
+//     return view('welcome')->with('name', 'tad')->with('say', '你好');
+// });
 
-Route::get('/list', function () {
-    $data = ['name' => 'sean', 'say' => 'list'];
-    return view("welcome", $data);
-});
-Route::get('/list2', function () {
-    return view('welcome', ['name' => 'possess0910 ', 'say' => '']);
-});
+// Route::get('/list', function () {
+//     $data = ['name' => 'sean ', 'say' => 'list '];
+//     return view("welcome", $data);
+// });
+// Route::get('/list2', function () {
+//     return view('welcome', ['name' => 'possess0910 ', 'say' => '']);
+// });
 
 //加入內建的使用者認證機制時，自動產生路由
 Auth::routes();

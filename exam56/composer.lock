@@ -4,29 +4,26 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "a9307caf25c2dc972779d1d3610e183e",
+    "content-hash": "97ad32a00dd49a129a970a3fe7fb1fff",
     "packages": [
         {
             "name": "caouecs/laravel-lang",
-            "version": "3.0.62",
+            "version": "3.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/caouecs/Laravel-lang.git",
-                "reference": "fcb8cec051b175278e0a9efa440f0b1033d12dd7"
+                "reference": "cb24a96b71bfc2fc20760711f6c3a92040bab611"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/caouecs/Laravel-lang/zipball/fcb8cec051b175278e0a9efa440f0b1033d12dd7",
-                "reference": "fcb8cec051b175278e0a9efa440f0b1033d12dd7",
+                "url": "https://api.github.com/repos/caouecs/Laravel-lang/zipball/cb24a96b71bfc2fc20760711f6c3a92040bab611",
+                "reference": "cb24a96b71bfc2fc20760711f6c3a92040bab611",
                 "shasum": ""
             },
             "require-dev": {
-                "friendsofphp/php-cs-fixer": "^2.10"
+                "fabpot/php-cs-fixer": "^1.10"
             },
             "suggest": {
-                "ablunier/laravel-lang-installer": "Command for easily add languages to a Laravel project",
-                "andrey-helldar/laravel-lang-publisher": "Easy installation and update of translation files for your project",
-                "arcanedev/laravel-lang": "Translations manager and checker for Laravel 5",
                 "overtrue/laravel-lang": "Command to add languages in your project"
             },
             "type": "library",
@@ -47,7 +44,7 @@
                 "laravel",
                 "lpm"
             ],
-            "time": "2019-03-17T10:36:46+00:00"
+            "time": "2016-04-23T21:35:10+00:00"
         },
         {
             "name": "dnoegel/php-xdg-base-dir",
