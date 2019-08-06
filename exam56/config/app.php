@@ -78,6 +78,7 @@ return [
     |
     */
 
+    // 選擇語言包
     'locale' => 'zh-TW',
 
     /*

@@ -66,13 +66,14 @@
     </head>
     <body>
         <div class="flex-center position-ref full-height">
-            @if (Route::has('login'))
+            @if (Route::has('login')) 
+            {{-- 判斷有無登入 --}}
                 <div class="top-right links">
                     @auth
                         <a href="{{ url('/home') }}">Home</a>
                     @else
-                        <a href="{{ route('login') }}">Login</a>
-                        <a href="{{ route('register') }}">Register</a>
+                        <a href="{{ route('login') }}">登入</a>
+                        <a href="{{ route('register') }}">註冊</a>
                     @endauth
                 </div>
             @endif
