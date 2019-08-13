@@ -26,11 +26,14 @@
 <body>
     <div id="app">
 
-        {{-- 本段內容移動至nav.blade.php --}}
-        @include('layouts.nav')
+    {{-- 本段內容移動至nav.blade.php --}}
+    @include('layouts.nav')
 
         <main class="py-4">
-            @yield('content')
+                <div class="container">
+                    @yield('content')
+                </div>
+            
         </main>
     </div>
 </body>
