@@ -25,11 +25,14 @@
                             </li>
                         @else
                             @section('my_menu')
-                                <li>
+                                {{-- <li>
                                     <a class="nav-link" href="/home">
                                         {{ __('Home') }}
                                     </a>
-                                </li>
+                                </li> --}}
+                                @role('管理員');
+                                <li><a class="nav-link" href="/admin">{{ __('Admin') }}</a></li>
+                                @endrole
                             @show
                             
                             <li class="nav-item dropdown">

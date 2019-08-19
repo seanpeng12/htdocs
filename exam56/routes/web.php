@@ -38,3 +38,8 @@ Route::get('/', function () { //localhost =>welcome.blade.php 網址=>動作
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+
+// Route::group(['prefix' => config('backpack.base.route_prefix'), 'middleware' => ['admin'], 'namespace' => 'Admin'], function () {
+//     CRUD::resource('tag', 'TagCrudController');
+// });
